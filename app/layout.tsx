@@ -77,6 +77,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${_displayFont.variable} ${_bodyFont.variable}`}>
       <head>
+        <meta name="yandex-verification" content="b67dd805f5b9b3e2" />
         {/* v0: additional custom head tags can be inserted here */}
         <meta name="author" content="La Casino" />
         <meta name="theme-color" content="#14100f" />
